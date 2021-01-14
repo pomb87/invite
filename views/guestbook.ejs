@@ -1,0 +1,28 @@
+<div id="arrow_menu" class="arrow_menu">
+   <div class="arrowback"><span class="arrowtextback">Menu</span></div>
+   <div class="arrow" id="forward_info"><span class="arrowtext">Info</span></div>
+</div>
+
+<div id="guestbook_input" class="guestbook_input">
+
+  <div id="guestbookHeader" class="guestbookHeader">
+    <h1 class="font_gold">Gästebuch</h1>
+    <p>Hier könnt ihr uns gerne Nachrichten/Sprüche/Kommentare hinterlassen</p>
+    <button type="guestbookForward" class="btn btn-primary" id="guestbookForward">Neuer Eintrag</button>
+ </div>
+
+ <div id="guestbookBody" class="guestbookBody">
+  <% for (const invite of model) { %>
+  <div class="col py-2">
+    <div class="card border-success shadow">
+      <div class="card-body">
+        <div class="float-right text-success"><%= invite.TIMESTAMP_RESP %></div>
+        <h4 class="card-title text-success"><%= invite.NAME %></h4>
+        <p class="card-text"><%= invite.MSG %></p>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>
+
+</div>

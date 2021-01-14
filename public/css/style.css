@@ -1,0 +1,353 @@
+/***********************LAYOUT ******************************************/
+html {
+    background: url("/images/plantsSmall.png") repeat center center fixed; 
+    background-size: auto;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    overflow-x: hidden;
+	overflow-y: auto;
+  }
+  
+  body{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+	overflow-y: auto;
+  }
+
+i#plus.plus.row.h-100.justify-content-center.align-items-center {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+i#plus.row.h-100.justify-content-center.align-items-center {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+/******************guestbook **********************/
+.guestbook_input {
+  top:80px;
+  position: absolute;
+}
+
+.guestbookHeader {
+  max-width: 400px;
+  min-width: 350px;
+  min-height: 100px;
+  border-color: rgb(227,188,122);
+  border-style: double;
+  background-color: white;
+  top: 60px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+} 
+
+.guestbookBody {
+  position: absolute;
+  top: 180px;
+} 
+
+/****************** info **************************/
+
+.info {
+  max-width: 300px;
+  min-width: 300px;
+  position: absolute;
+  min-height: 250px;
+  border-color: rgb(227,188,122);
+  border-style: double;
+  background-color: white;
+  top: 60px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+} 
+
+.location {
+  max-width: 350px;
+  min-width: 300px;
+  position: absolute;
+  min-height: 600px;
+  max-height: 600px;
+  border-color: rgb(227,188,122);
+  border-style: double;
+  background-color: white;
+  top: 330px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+} 
+
+.weddingabc {
+  max-width: 350px;
+  min-width: 300px;
+  position: absolute;
+  min-height: 500px;
+  border-color: rgb(227,188,122);
+  border-style: double;
+  background-color: white;
+  top: 60px;
+  overflow-x: hidden;
+  overflow-y: auto;
+} 
+
+.abc {
+  padding-left: 10px;
+}
+
+.font_gold {
+  color: rgb(227,188,122);
+}
+
+.font_dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font_courgette {
+  font-family: 'Courgette Script', cursive;
+}
+
+.font_marck {
+  font-family: 'Marck Script', cursive;
+}
+
+.abc::first-letter {
+  font-size: 150%;
+  color: rgb(227,188,122);
+}
+
+.btn-primary {
+  background-color:rgb(227,188,122);
+  border-color: rgb(227,188,122);
+}
+
+/****************** timeline **************************/
+.timeline {
+    height: 90%;
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    min-height: 300px;
+    border-color: rgb(227,188,122);
+    border-style: double;
+    background-color: white;
+    top: 60px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  } 
+
+  .text-success {
+    color: rgb(227,188,122) !important;
+  }
+  
+  .border-success {
+    border-color: rgb(227,188,122) !important;
+  }
+
+  /****************** gallery **************************/
+
+.gallery_container {
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  min-height: 300px;
+  border-color: rgb(227,188,122);
+  border-style: double;
+  background-color: white;
+  top: 60px;
+  overflow-x: hidden;
+  overflow-y: auto;
+} 
+
+
+/* Main CSS*/
+
+.bg-light{
+  background-color: #F1F1F1;
+}
+
+/* Gallery CSS*/
+.gallery-container {
+  position: relative;
+  width: 100%;
+  border-width: 7px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+.gallery-container:hover .overlay {
+  height: 50px; 
+}
+
+.text {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 1.3em;
+  color: #414141;
+  font-weight: bold;
+    .small{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 13px;
+      line-height: 1.3em;  
+      color: #999999;    
+    }
+    .view-btn{
+      right: 10px;     
+      top: 12px;
+      position: absolute;     
+      color: #000000;
+      font-weight: 500;
+      border-width: 1px;
+      border-color: #e7e7e7;
+      border-style: solid;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 13px;
+      &:hover{
+        border-color: #333333;
+      }
+    }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: auto;
+}
+
+/* Modal CSS */
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0rem;
+}
+
+.modal-thumbs{
+  min-height: 150px;
+  label{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.3em;
+    font-weight: 700;
+    color: #333333;
+    padding-left: 5px;
+  }
+  ul{
+    padding: 0;
+    li{
+      list-style: none;
+      width: 25%;
+      float: left;
+      @media (max-width: 768px) {
+        width: 50%;
+      }
+      .border {
+        display: inline-block;
+        position: relative;
+      }
+      .border::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: inset 0 0 0 0 rgba(255,255,255,.5);
+        transition: box-shadow .1s ease;
+        cursor: pointer;
+      }
+      .border:hover::after {
+        box-shadow: inset 0 0 0 10px rgba(255,255,255,.5);
+      }
+      img {
+        display: block;
+        position: relative;
+      }
+    }
+  }
+}
+
+.arrow-left{
+  float: left;
+  left: 0px;
+  padding: 50px;
+  position: fixed;
+  height: 100%;
+  @media (max-width: 768px) {
+    display:none!important;
+  }
+  &:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+}
+
+.carousel-inner{
+  float: left;
+}
+
+.arrow-right{
+  float: left;
+  right: 0px;
+  padding: 50px; 
+  position: fixed;
+  height: 100%;
+  @media (max-width: 768px) {
+    display:none!important;
+  }
+  &:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+}
+
+/******************** fonts ***************************/
+
+.font-dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+.font-courgette {
+    font-family: 'Courgette', cursive;
+}
+
+.font-courgette-lg {
+    font-family: 'Courgette', cursive;
+    font-size: larger;
+}
+
+.font-marck {
+    font-family: 'Marck Script', cursive;
+    font-size: large;
+}
+
+.font-marck-lg {
+    font-family: 'Marck Script', cursive;
+    font-size: x-large;
+}

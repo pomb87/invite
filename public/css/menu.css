@@ -1,0 +1,173 @@
+.toggle {
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+   position: absolute;
+     margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+     text-align: center;
+  } 
+ .menu {
+    background-color: white;
+    background: url("/images/menuClickedTransSmall4.png")  no-repeat center center;
+    background-size: 150px;
+    height: 125px;
+    width: 125px;
+    transform: scale(0);
+    border-radius: 50%;
+    border-style: double;
+    border-color: rgb(227,188,122);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    margin:auto;
+  }
+
+  .menu_expanded {
+    background-color: white;
+    background: url("/images/menuClickedTransSmall4.png")  no-repeat center center;
+    background-size: 150px;
+    height: 125px;
+    width: 125px;
+    transform: scale(3);
+    border-radius: 50%;
+    border-style: double;
+    border-color: rgb(227,188,122);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 0.7s;
+    margin:auto;
+  }
+
+  .plus{
+    background: url("/images/menuRoundTrans.png")  no-repeat center center;
+    background-size: 300px;
+    height: 300px;
+    width: 300px;
+    display: block;
+    transition: 0.7s;
+    border-style: double;
+    border-color: rgb(227,188,122);
+    border-radius: 50%;
+    z-index: 0;
+    margin-left: 5px;
+  }
+
+/***************** icons *********************************/
+  .icon {
+    height: 25px;
+  }
+
+  .iconWeddingAbc {
+    position: absolute;
+    top: 76.5px;
+    left:70px;
+    z-index: 1;
+  }
+
+  .iconTimeline{
+    position: absolute;
+    top: 32px;
+    left:89px;
+    z-index: 1;
+  }
+
+  .iconGallery{
+    position: absolute;
+    top: 78px;
+    left:21px;
+    z-index: 1;
+  }
+  
+  .iconInfo{
+    position: absolute;
+    top: 5px;
+    right:46px;
+    z-index: 1;
+  }
+
+  .iconGuestbook{
+    position: absolute;
+    top: 32px;
+    right:88px;
+    z-index: 1;
+  }
+
+  
+  /*********************** Arrows ***********************/
+  .arrow:after {
+    color: rgb(227,188,122);
+    border-left: 20px solid;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0;
+  }
+  .arrow {
+    background-color: rgb(227,188,122);
+    /*width: 150px; */
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    position: relative;
+    margin-left: 180px;
+  }
+  .arrowtext {
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 11;
+    padding-left: 10px;
+  }
+
+  .arrowtextback {
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 11;
+    padding-right: 10px;
+  }
+
+  .arrowback:before {
+    color: rgb(227,188,122);
+    border-left: 20px solid;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: 51px;
+    top: 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+  }
+  .arrowback {
+    background-color: rgb(227,188,122);
+    /*width: 150px; */
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .arrow_menu {
+    position:fixed;
+    top: 10px;
+
+  }
