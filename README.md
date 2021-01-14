@@ -14,7 +14,7 @@ npm install express-generator -g
 express invite
 
 # start
-node start
+node server.js
 
 # on server
 forever start server.js
